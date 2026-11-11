@@ -1,0 +1,28 @@
+# Normalize line endings automatically
+* text=auto eol=lf
+
+# Markdown and documentation
+*.md text diff=markdown
+*.txt text
+
+# Configuration files
+*.json text
+*.yml text
+*.yaml text
+*.toml text
+.editorconfig text
+.env.example text
+.gitattributes text
+.gitignore text
+
+# Binary media assets (always strip EXIF/GPS and redact serial numbers before adding)
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

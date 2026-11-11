@@ -1,0 +1,50 @@
+# Environment & Secrets (NEVER commit credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Restricted / Sensitive Material Guardrails
+# (See Compliance/Confidentiality Standard.md - keep Restricted records out of Git)
+restricted/
+private-records/
+*unredacted*
+*4473*
+*ffl-copy*
+
+# Obsidian Workspace & Local Cache
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json
+.trash/
+
+# Static Site Build & Dependencies (for Phase 3 Website build)
+node_modules/
+dist/
+build/
+.astro/
+.eleventy*
+_site/
+public/
+.cache/
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tmp/
+temp/
